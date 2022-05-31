@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package = "mypb/simple";
+
+message SimpleMessage{
+    uint32 id = 1;
+    string msg = 2;
+    string sender = 3;
+    repeated string receivers = 4;
+}
+
+message SimplestMessage{
+    string msg = 1;
+}
